@@ -2,7 +2,7 @@ in softmax CE loss, what is
 text
 delta3[range(len(X)), y] -= 1
 
-Metamate
+Answer
 A snippet of code from a Softmax Cross-Entropy loss implementation!
 In this specific line of code, delta3 is likely the derivative of the loss with respect to the output of the softmax function.
 Here's what's happening:
@@ -20,9 +20,11 @@ y is the true label (one-hot encoded)
 By subtracting 1 from the elements in delta3 that correspond to the true labels, we're effectively computing the error gradient of the Cross-Entropy loss with respect to the output of the softmax function.
 This is a key step in backpropagation, as it allows us to propagate the error gradients backwards through the network and update the model's weights accordingly.
 
-Wenping Wang
+Ask
 first, how is CE loss itself calulated with softmax output? second, why is the CE loss derivative being ∂L/∂z = p - y
-Metamate
+
+
+Answer
 I'd be happy to explain both concepts in detail.
 1. Calculating Cross-Entropy (CE) Loss with Softmax Output
 The Cross-Entropy loss is a measure of the difference between the predicted probability distribution and the true label. Given a softmax output p and a true label y, the CE loss is calculated as:
